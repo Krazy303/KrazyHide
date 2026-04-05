@@ -53,6 +53,7 @@ import com.rushikesh.krazyhide.R
 import com.rushikesh.krazyhide.presentation.components.AutoStartAppsCard
 import com.rushikesh.krazyhide.presentation.components.CaptureStatusCard
 import com.rushikesh.krazyhide.presentation.components.DetectionConfidenceCard
+import com.rushikesh.krazyhide.presentation.components.GitHubFooter
 import com.rushikesh.krazyhide.presentation.components.ModelLoadingDialog
 import com.rushikesh.krazyhide.presentation.components.OverlayOpacityCard
 import com.rushikesh.krazyhide.presentation.components.PixelationLevelCard
@@ -358,6 +359,10 @@ fun MainScreen(
                 selectedCount = uiState.autoStartApps.size,
                 onClick = onAutoStartAppsClick
             )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            GitHubFooter()
 
             Spacer(modifier = Modifier.height(24.dp))
         }
